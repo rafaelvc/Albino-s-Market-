@@ -1,0 +1,594 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="windowModality" >
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="enabled" >
+   <bool>true</bool>
+  </property>
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy" >
+   <sizepolicy vsizetype="Maximum" hsizetype="Preferred" >
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>Cadastro de Empresas e Produtos</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset>
+    <normaloff>ui/png/16x16/application.png</normaloff>ui/png/16x16/application.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QGroupBox" name="groupBox_2" >
+    <property name="geometry" >
+     <rect>
+      <x>3</x>
+      <y>227</y>
+      <width>791</width>
+      <height>283</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string> Produtos da Empresa</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2" >
+     <item row="1" column="0" >
+      <widget class="QPushButton" name="pushButton" >
+       <property name="text" >
+        <string>Cadastrar Produto...</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/shopping_cart.png</normaloff>ui/png/16x16/shopping_cart.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1" >
+      <widget class="QPushButton" name="pushButton_2" >
+       <property name="text" >
+        <string>Editar Produto...</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/shopping_cart_accept.png</normaloff>ui/png/16x16/shopping_cart_accept.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2" >
+      <widget class="QPushButton" name="pushButton_11" >
+       <property name="text" >
+        <string>Excluir Produto</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/shopping_cart_remove.png</normaloff>ui/png/16x16/shopping_cart_remove.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="5" >
+      <widget class="QTableView" name="tableView" />
+     </item>
+     <item row="3" column="4" >
+      <widget class="QPushButton" name="pushButton_8" >
+       <property name="text" >
+        <string>Sair</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/application_next.png</normaloff>ui/png/16x16/application_next.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4" >
+      <widget class="QPushButton" name="pushButton_13" >
+       <property name="text" >
+        <string>Imprimir Lista Prod.</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/printer.png</normaloff>ui/png/16x16/printer.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3" >
+      <widget class="QPushButton" name="pushButton_7" >
+       <property name="text" >
+        <string>Pesquisar Produto...</string>
+       </property>
+       <property name="icon" >
+        <iconset>
+         <normaloff>ui/png/16x16/search.png</normaloff>ui/png/16x16/search.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3" >
+      <widget class="QPushButton" name="pushButton_9" >
+       <property name="enabled" >
+        <bool>false</bool>
+       </property>
+       <property name="text" >
+        <string>Ajuda</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>pushButton</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>tableView</zorder>
+    <zorder>pushButton_8</zorder>
+    <zorder>pushButton_13</zorder>
+    <zorder>pushButton_7</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>label_5</zorder>
+   </widget>
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
+     <rect>
+      <x>4</x>
+      <y>26</y>
+      <width>791</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Empresa</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_5" >
+     <property name="geometry" >
+      <rect>
+       <x>4</x>
+       <y>165</y>
+       <width>150</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Cadastrar Empresa</string>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/application_add.png</normaloff>ui/png/16x16/application_add.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_6" >
+     <property name="geometry" >
+      <rect>
+       <x>151</x>
+       <y>165</y>
+       <width>141</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Editar Empresa</string>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/application_edit.png</normaloff>ui/png/16x16/application_edit.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4" >
+     <property name="geometry" >
+      <rect>
+       <x>668</x>
+       <y>162</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/rewind.png</normaloff>ui/png/16x16/rewind.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3" >
+     <property name="geometry" >
+      <rect>
+       <x>728</x>
+       <y>162</y>
+       <width>60</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/fast_forward.png</normaloff>ui/png/16x16/fast_forward.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_2" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>61</y>
+       <width>231</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>30</y>
+       <width>231</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>66</y>
+       <width>68</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>CNPJ/CPF:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>97</y>
+       <width>38</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Nome:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>35</y>
+       <width>40</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Código</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>92</y>
+       <width>341</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10" >
+     <property name="geometry" >
+      <rect>
+       <x>290</x>
+       <y>165</y>
+       <width>151</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Excluir Empresa</string>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/application_remove.png</normaloff>ui/png/16x16/application_remove.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_4" >
+     <property name="enabled" >
+      <bool>false</bool>
+     </property>
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>125</y>
+       <width>231</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>68</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Telefone:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12" >
+     <property name="geometry" >
+      <rect>
+       <x>440</x>
+       <y>165</y>
+       <width>161</width>
+       <height>26</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>Pesquisar Empresa...</string>
+     </property>
+     <property name="icon" >
+      <iconset>
+       <normaloff>ui/png/16x16/search.png</normaloff>ui/png/16x16/search.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>5</y>
+      <width>481</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font" >
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="text" >
+     <string>Cadastro de Empresas e Produtos - Mercado ALBINO</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5" >
+    <property name="geometry" >
+     <rect>
+      <x>18</x>
+      <y>476</y>
+      <width>460</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font" >
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text" >
+     <string>Desenvolvido por: Rafael da V. Cabral - 47-99670133 (verganic@gmail.com)</string>
+    </property>
+    <property name="scaledContents" >
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEmresa" >
+    <property name="title" >
+     <string>Empresa</string>
+    </property>
+    <addaction name="actionCad" />
+    <addaction name="actionEditar" />
+    <addaction name="actionExcluir" />
+    <addaction name="separator" />
+    <addaction name="actionPesquisar" />
+   </widget>
+   <widget class="QMenu" name="menuProduto" >
+    <property name="title" >
+     <string>Produto</string>
+    </property>
+    <addaction name="actionCadastrar" />
+    <addaction name="actionEditar_2" />
+    <addaction name="actionExcluir_2" />
+    <addaction name="separator" />
+    <addaction name="actionPesquisar_2" />
+    <addaction name="actionImprimir_Lista" />
+   </widget>
+   <addaction name="menuEmresa" />
+   <addaction name="menuProduto" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionCad" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/application_add.png</normaloff>ui/png/16x16/application_add.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Cadastrar...</string>
+   </property>
+  </action>
+  <action name="actionEditar" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/application_edit.png</normaloff>ui/png/16x16/application_edit.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Editar...</string>
+   </property>
+  </action>
+  <action name="actionExcluir" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/application_remove.png</normaloff>ui/png/16x16/application_remove.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Excluir...</string>
+   </property>
+  </action>
+  <action name="actionPesquisar" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/search.png</normaloff>ui/png/16x16/search.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Pesquisar...</string>
+   </property>
+  </action>
+  <action name="actionCadastrar" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/shopping_cart.png</normaloff>ui/png/16x16/shopping_cart.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Cadastrar...</string>
+   </property>
+  </action>
+  <action name="actionEditar_2" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/shopping_cart_accept.png</normaloff>ui/png/16x16/shopping_cart_accept.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Editar...</string>
+   </property>
+  </action>
+  <action name="actionExcluir_2" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/shopping_cart_remove.png</normaloff>ui/png/16x16/shopping_cart_remove.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Excluir</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_2" >
+   <property name="icon" >
+    <iconset>
+     <normaloff>ui/png/16x16/search.png</normaloff>ui/png/16x16/search.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Pesquisar...</string>
+   </property>
+  </action>
+  <action name="actionImprimir_Lista" >
+   <property name="icon" >
+    <iconset>
+     <normalon>ui/png/16x16/printer.png</normalon>
+    </iconset>
+   </property>
+   <property name="text" >
+    <string>Imprimir Lista de Produtos...</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_8</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>694</x>
+     <y>589</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>375</x>
+     <y>317</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
